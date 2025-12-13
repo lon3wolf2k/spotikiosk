@@ -130,12 +130,12 @@ spotikiosk/
 ├── install.sh
 ├── README.md
 ├── static/
-│   ├── app.js
-│   ├── styles.css
-│   └── uploads/
+│ ├── app.js
+│ ├── styles.css
+│ └── uploads/
 ├── templates/
-│   ├── index.html
-│   └── settings.html
+│ ├── index.html
+│ └── settings.html
 
 🧾 License
 MIT License
