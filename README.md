@@ -34,11 +34,11 @@
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/yourname/spotikiosk.git
+git clone https://github.com/lon3wolf2k/spotikiosk.git
 cd spotikiosk
 2️⃣ Run the installer
 bash
-Αντιγραφή κώδικα
+ 
 chmod +x install.sh
 ./install.sh
 The installer will:
@@ -51,7 +51,7 @@ Install required Python packages
 
 ▶️ Running SpotiKiosk
 bash
-Αντιγραφή κώδικα
+ 
 python3 app.py
 Access URLs:
 
@@ -61,7 +61,7 @@ Settings: http://127.0.0.1:5000/settings
 
 🔐 Default Settings Password
 nginx
-Αντιγραφή κώδικα
+ 
 pibox123
 Change it in Settings → Security after first login.
 
@@ -80,8 +80,8 @@ Client Secret
 
 Set Redirect URI to:
 
-arduino
-Αντιγραφή κώδικα
+ 
+ 
 http://127.0.0.1:5000/callback
 Configure SpotiKiosk
 Open /settings
@@ -109,7 +109,7 @@ This is a Spotify security restriction.
 SpotiKiosk is designed to run in Chromium kiosk mode.
 
 bash
-Αντιγραφή κώδικα
+ 
 chromium-browser --kiosk http://127.0.0.1:5000
 You can automate this on boot after initial setup.
 
@@ -136,8 +136,8 @@ Disable screen blanking for kiosk usage
 Designed for 24/7 operation
 
 📦 Repository Structure
-arduino
-Αντιγραφή κώδικα
+ 
+ 
 spotikiosk/
 ├── app.py
 ├── config.json.example
