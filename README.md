@@ -36,7 +36,7 @@
 ```bash
 git clone https://github.com/lon3wolf2k/spotikiosk.git
 cd spotikiosk
-2️⃣ Run the installer
+### 2️⃣ Run the installer
 bash
  
 chmod +x install.sh
@@ -49,7 +49,7 @@ Create a Python virtual environment
 
 Install required Python packages
 
-▶️ Running SpotiKiosk
+### ▶️ Running SpotiKiosk
 bash
  
 python3 app.py
@@ -60,8 +60,7 @@ Frontend: http://127.0.0.1:5000
 Settings: http://127.0.0.1:5000/settings
 
 🔐 Default Settings Password
-nginx
- 
+
 pibox123
 Change it in Settings → Security after first login.
 
@@ -75,27 +74,17 @@ Create a new app
 Copy:
 
 Client ID
-
 Client Secret
-
 Set Redirect URI to:
-
- 
- 
 http://127.0.0.1:5000/callback
 Configure SpotiKiosk
 Open /settings
-
 Enter:
-
 Client ID
-
 Client Secret
-
 Callback URL
 
 Click Save
-
 Click Login with Spotify
 
 ⚠️ Important: Local Login Requirement
@@ -108,8 +97,6 @@ This is a Spotify security restriction.
 🖥️ Kiosk Mode (Optional)
 SpotiKiosk is designed to run in Chromium kiosk mode.
 
-bash
- 
 chromium-browser --kiosk http://127.0.0.1:5000
 You can automate this on boot after initial setup.
 
@@ -117,11 +104,8 @@ You can automate this on boot after initial setup.
 Available ticker modes:
 
 Off
-
 Text only
-
 RSS only
-
 RSS + Text
 
 RSS feeds are cached and refreshed automatically.
@@ -130,13 +114,10 @@ RSS feeds are cached and refreshed automatically.
 Recommended: Raspberry Pi Zero 2 W or better
 
 Use wired Ethernet if possible
-
 Disable screen blanking for kiosk usage
-
 Designed for 24/7 operation
 
 📦 Repository Structure
- 
  
 spotikiosk/
 ├── app.py
