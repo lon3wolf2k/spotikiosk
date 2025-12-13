@@ -140,7 +140,7 @@ Built with Flask, the Spotify Web API, and a lot of love for good bar vibes 🍻
 Sample images follow:
 🎵 Settings page:
 <img src="./sample-images/image1.jpg">
-<img src="./sample-images/photo1.jpg">
+<img src="./sample-images/image1.jpg">
 🎵 Main playing now screen:
 <img src="./sample-images/image2.jpg">
 🎵 Sample ticker:
