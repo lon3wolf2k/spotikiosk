@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Settings</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="settingsWrap">
+    <h1>Settings <span class="pill">{{ version }}</span></h1>
+
+    {% if locked %}
+    <div class="panel">
+      <h2>Locked</h2>
+      <p>Enter password to unlock settings.</p>
+      <div class="row">
+        <input id="pw" type="password" placeholder="Password" />
+        <button id="btnLogin">Unlock</button>
+      </div>
+      <div id="loginMsg" class="msg"></div>
+    </div>
+    {% endif %}
+
+    <div id="settingsPanels" class="{% if locked %}hidden{% endif %}">
+
+      <!-- ================= SPOTIFY ================= -->
+      <div class="panel">
+        <h2>Spotify</h2>
+
+        <div class="grid2">
+          <label>
+            Client ID
+            <input
+              id="spotify_client_id"
+              type="text"
+              placeholder="Spotify Client ID"
+            />
+          </label>
+
+          <label>
+            Client Secret
+            <input
+              id="spotify_client_secret"
+              type="password"
+              placeholder="Spotify Client Secret"
+            />
+          </label>
+
+          <label>
+            Callback URL
+            <input
+              id="spotify_redirect_uri"
+              type="text"
+              placeholder="http://127.0.0.1:5000/callback"
+            />
+          </label>
+        </div>
+
+        <div class="row">
+          <button id="btnSaveSpotify" class="btnSecondary">
+            Save credentials
+          </button>
+
+          <a class="btn" href="/login">
+            Login with Spotify
+          </a>
+
+          <span id="spotifyState" class="pill">Unknown</span>
+        </div>
+
+        <div id="spotifySaveMsg" class="msg"></div>
+
+        <p class="hint">
+          Save credentials first, then log in with Spotify.
+          If you change these values, you will need to log in again.
+        </p>
+      </div>
+
+      <!-- ================= APPEARANCE ================= -->
+      <div class="panel">
+        <h2>Appearance</h2>
+
+        <div class="grid2">
+          <label>
+            Theme
+            <select id="theme">
+              <option value="dark">Dark</option>
+              <option value="light">Light</option>
+            </select>
+          </label>
+
+          <label>
+            Layout
+            <select id="layout">
+              <option value="horizontal">Horizontal</option>
+              <option value="vertical">Vertical</option>
+            </select>
+          </label>
+
+          <label>
+            Logo URL
+            <input id="logo_url" type="text" />
+          </label>
+
+          <label>
+            Fallback image
+            <input id="fallbackUpload" type="file" accept="image/*" />
+          </label>
+
+          <label>
+            Fallback image URL
+            <input id="fallback_logo" type="text" />
+          </label>
+
+          <label>
+            Text scale
+            <input
+              id="text_scale"
+              type="number"
+              step="0.05"
+              min="0.5"
+              max="2"
+            />
+          </label>
+        </div>
+
+        <div class="hr"></div>
+
+        <h3>Ticker</h3>
+
+        <div class="grid2">
+          <label class="inline">
+            <input id="show_ticker" type="checkbox" />
+            Show ticker
+          </label>
+
+          <label>
+            Content
+            <select id="ticker_mode">
+              <option value="off">Off</option>
+              <option value="text">Text only</option>
+              <option value="rss">RSS only</option>
+              <option value="mixed">RSS + Text</option>
+            </select>
+          </label>
+
+          <label>
+            Text
+            <input id="ticker_text" type="text" />
+          </label>
+
+          <label>
+            RSS URL
+            <input id="ticker_rss_url" type="text" />
+          </label>
+
+          <label>
+            RSS refresh (sec)
+            <input id="ticker_rss_interval" type="number" min="60" />
+          </label>
+
+          <label>
+            Font size
+            <input id="ticker_font_size" type="number" min="10" max="80" />
+          </label>
+
+          <label>
+            Speed
+            <input id="ticker_speed" type="number" min="10" max="200" />
+          </label>
+        </div>
+
+        <div class="row">
+          <button id="btnSave">Save</button>
+          <button id="btnRefresh" class="btnSecondary">
+            Refresh kiosk now
+          </button>
+          <span id="saveMsg" class="msg"></span>
+        </div>
+      </div>
+
+      <!-- ================= SECURITY ================= -->
+      <div class="panel">
+        <h2>Security</h2>
+
+        <div class="grid2">
+          <label>
+            Old password
+            <input id="old_password" type="password" />
+          </label>
+
+          <label>
+            New password
+            <input id="new_password" type="password" />
+          </label>
+        </div>
+
+        <div class="row">
+          <button id="btnChangePw" class="btnSecondary">
+            Change password
+          </button>
+          <span id="pwMsg" class="msg"></span>
+        </div>
+
+        <p class="hint">
+          Default is <code>pibox123</code> until you change it.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="/static/settings.js"></script>
+</body>
+</html>
+

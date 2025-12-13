@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Now Playing</title>
+  <link rel="stylesheet" href="/static/styles.css?v=1"/>
+</head>
+<body class="layout-horizontal">
+  <div id="bg" class="bg"></div>
+  <div class="bgOverlay"></div>
+
+  <div class="main">
+    <div id="card" class="card">
+      <img id="art" class="art" alt="Album art"/>
+      <div class="info">
+        <div class="nowPlayingLabel">Now Playing</div>
+
+        <div id="track" class="track">—</div>
+        <div id="artist" class="artist">—</div>
+        <div id="album" class="album">—</div>
+
+        <div class="progress">
+          <div class="bar"><div id="barFill" class="fill" style="width:0%"></div></div>
+          <div class="times">
+            <div id="tNow">0:00</div>
+            <div id="tDur">0:00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="fallback" class="fallback hidden">
+    <img id="fallbackImg" class="fallbackImg hidden" alt="Fallback logo"/>
+  </div>
+
+  <div id="ticker" class="ticker hidden">
+    <div id="tickerInner" class="tickerInner"></div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
+
