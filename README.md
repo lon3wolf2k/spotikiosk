@@ -39,8 +39,8 @@ cd spotikiosk
 ### 2️⃣ Run the installer
 bash
  
-chmod +x install.sh
-./install.sh
+chmod +x spotikiosk.sh
+./spotikios.sh
 The installer will:
 
 Install system dependencies
