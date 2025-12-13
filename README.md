@@ -1,3 +1,4 @@
+
 # 🎵 SpotiKiosk
 
 **SpotiKiosk** is a self-hosted Spotify *Now Playing* kiosk for bars, cafés, and venues, designed for always-on screens and Raspberry Pi setups. It displays the current track with album art, progress bar, and an optional scrolling ticker (text and/or RSS), includes a fallback screen when music is paused, and offers a password-protected settings panel for live customization. Runs locally, works great in Chromium kiosk mode, and delivers clean, modern “what’s playing” visuals without relying on cloud services.
@@ -32,15 +33,17 @@
 
 ## 🚀 Installation
 
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/lon3wolf2k/spotikiosk.git
-cd spotikiosk
-### 2️⃣ Run the installer
-bash
+### 1️⃣ **Clone the repository**
+
+    git clone https://github.com/lon3wolf2k/spotikiosk.git
+    cd spotikiosk
+
+### 2️⃣ **Run the installer**
+
  
-chmod +x spotikiosk.sh
-./spotikios.sh
+    chmod +x spotikiosk.sh
+    ./spotikiosk.sh
+
 The installer will:
 
 Install system dependencies
@@ -49,10 +52,12 @@ Create a Python virtual environment
 
 Install required Python packages
 
-### ▶️ Running SpotiKiosk
-bash
+### ▶️ **Running SpotiKiosk**
+
  
-python3 app.py
+
+    python3 app.py
+
 Access URLs:
 
 Frontend: http://127.0.0.1:5000
@@ -109,6 +114,7 @@ RSS only
 RSS + Text
 
 RSS feeds are cached and refreshed automatically.
+Runs from your entire network as **spotikiosk.local:5000**
 
 🍓 Raspberry Pi Notes
 Recommended: Raspberry Pi Zero 2 W or better
@@ -139,11 +145,10 @@ Built with Flask, the Spotify Web API, and a lot of love for good bar vibes 🍻
 
 Sample images follow:
 🎵 Settings page:
-<img src="./sample-images/image1.jpg">
-<img src="./sample-images/image1.jpg">
+<img src="https://raw.githubusercontent.com/lon3wolf2k/spotikiosk/refs/heads/main/sample-images/image1.jpg">
 🎵 Main playing now screen:
-<img src="./sample-images/image2.jpg">
+<img src="https://raw.githubusercontent.com/lon3wolf2k/spotikiosk/refs/heads/main/sample-images/image2.jpg">
 🎵 Sample ticker:
-<img src="./sample-images/image3.jpg">
+<img src="https://raw.githubusercontent.com/lon3wolf2k/spotikiosk/refs/heads/main/sample-images/image3.jpg">
 🎵 Sample RSS feed ticker:
-<img src="./sample-images/image4.jpg">
+<img src="https://raw.githubusercontent.com/lon3wolf2k/spotikiosk/refs/heads/main/sample-images/image4.jpg">
