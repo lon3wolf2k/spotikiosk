@@ -40,8 +40,8 @@
 
 ### 2️⃣ **Run the installer**
 
- 
-    chmod +x spotikiosk.sh
+     chmod +x spotikiosk.sh
+
     ./spotikiosk.sh
 
 The installer will:
@@ -54,9 +54,7 @@ Install required Python packages
 
 ### ▶️ **Running SpotiKiosk**
 
- 
-
-    python3 app.py
+     python3 app.py
 
 Access URLs:
 
