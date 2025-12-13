@@ -76,19 +76,20 @@ Create a new app
 
 Copy:
 
-Client ID
-Client Secret
-Set Redirect URI to:
-http://127.0.0.1:5000/callback
-Configure SpotiKiosk
-Open /settings
-Enter:
-Client ID
-Client Secret
-Callback URL
+ - Client ID
+ - Client Secret
+ - Set Redirect URI to:
 
-Click Save
-Click Login with Spotify
+    http://127.0.0.1:5000/callback
+
+ - Configure SpotiKiosk
+ - Open /settings
+ - Enter:
+ - Client ID
+ - Client Secret
+ - Callback URL
+ - Click Save
+ - Click Login with Spotify
 
 ⚠️ Important: Local Login Requirement
 Spotify authentication must be done from the same machine running SpotiKiosk
@@ -106,10 +107,10 @@ You can automate this on boot after initial setup.
 📰 Ticker Options
 Available ticker modes:
 
-Off
-Text only
-RSS only
-RSS + Text
+ 1. Off
+ 2. Text only
+ 3. RSS only
+ 4. RSS + Text
 
 RSS feeds are cached and refreshed automatically.
 Runs from your entire network as **spotikiosk.local:5000**
@@ -135,6 +136,7 @@ spotikiosk/
 ├── templates/
 │   ├── index.html
 │   └── settings.html
+
 🧾 License
 MIT License
 
