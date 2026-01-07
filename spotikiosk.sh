@@ -36,7 +36,7 @@ install_app() {
     python3 \
     python3-venv \
     python3-pip \
-    chromium-browser \
+    chromium \
     unclutter \
     curl \
     git \
